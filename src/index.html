@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>copyslab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="titlebar">
+      <span id="titlebar-title">copyslab</span>
+      <div id="titlebar-controls">
+        <button id="btn-minimize">&#8722;</button>
+        <button id="btn-maximize">&#9633;</button>
+        <button id="btn-close">&#10005;</button>
+      </div>
+    </div>
+
+    <div id="app">
+      <div id="toolbar">
+        <div id="folder-bar">
+          <button class="btn-icon" id="btn-pick-folder">...</button>
+          <span id="folder-display"></span>
+          <button id="btn-new">&#43;</button>
+        </div>
+        <div id="search-bar">
+          <input type="text" id="search" />
+        </div>
+        <div id="tag-bar"></div>
+      </div>
+
+      <div class="table-scroll-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-tag" id="th-tag"></th>
+              <th class="col-name" id="th-name"></th>
+              <th id="th-content"></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="snippets-body"></tbody>
+        </table>
+        <div id="empty-state"></div>
+      </div>
+
+      <div id="bottom-bar">
+        <button id="btn-about">&#9432;</button>
+      </div>
+    </div>
+
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <h2 id="modal-title"></h2>
+        <label><span id="lbl-name"></span><input type="text" id="m-title" /></label>
+        <label><span id="lbl-tag"></span><input type="text" id="m-tag" placeholder="tag/nested_tag" /></label>
+        <label><span id="lbl-content"></span><textarea id="m-content" rows="8"></textarea></label>
+        <div id="modal-actions">
+          <button id="btn-cancel"></button>
+          <button id="btn-save"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+
+    <div id="about-overlay" class="hidden">
+      <div id="about-modal">
+        <button id="btn-about-close">&#10005;</button>
+        <div id="about-logo">copyslab</div>
+        <div id="about-version">v0.1</div>
+        <div id="about-author"></div>
+        <div id="about-kofi-label"></div>
+        <button id="btn-kofi"><img src="assets/kofi.png" alt="Ko-fi" /></button>
+        <div id="about-desc"></div>
+        <div id="about-lang-switcher">
+          <span class="lang-opt" data-lang="en">EN</span>
+          <span class="lang-sep">|</span>
+          <span class="lang-opt" data-lang="cz">CZ</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

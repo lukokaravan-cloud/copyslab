@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>copyslab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="titlebar">
+      
+      <span id="titlebar-title">copyslab</span>
+      <div id="titlebar-controls">
+        <button id="btn-minimize" title="Minimalizovat">&#8722;</button>
+        <button id="btn-maximize" title="Maximalizovat">&#9633;</button>
+        <button id="btn-close" title="Zavřít">&#10005;</button>
+      </div>
+    </div>
+
+    <div id="app">
+      <div id="toolbar">
+        <div id="folder-bar">
+          <button class="btn-icon" id="btn-pick-folder" title="Vybrat složku">...</button>
+          <span id="folder-display">Žádná složka</span>
+          <button id="btn-new" title="Nový záznam">&#43;</button>
+        </div>
+        <div id="search-bar">
+          <input type="text" id="search" placeholder="Hledat…" />
+        </div>
+        <div id="tag-bar"></div>
+      </div>
+
+      <div class="table-scroll-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-tag">Tag</th>
+              <th class="col-name">Název</th>
+              <th>Obsah</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="snippets-body"></tbody>
+        </table>
+        <div id="empty-state">Žádné záznamy.</div>
+      </div>
+
+      <div id="bottom-bar">
+        <button id="btn-about" title="O aplikaci">&#9432;</button>
+      </div>
+    </div>
+
+    <div id="modal-overlay" class="hidden">
+      <div id="modal">
+        <h2 id="modal-title">Nový záznam</h2>
+        <label>Název<input type="text" id="m-title" /></label>
+        <label>Tag<input type="text" id="m-tag" placeholder="např. claude/programování" /></label>
+        <label>Obsah<textarea id="m-content" rows="8"></textarea></label>
+        <div id="modal-actions">
+          <button id="btn-cancel">Zrušit</button>
+          <button id="btn-save">Uložit</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="toast" class="hidden">Zkopírováno!</div>
+
+    <div id="about-overlay" class="hidden">
+      <div id="about-modal">
+        <button id="btn-about-close" title="Zrušit">&#10005;</button>
+        <div id="about-logo">copyslab</div>
+        <div id="about-version">v0.1</div>
+        <div id="about-author">Vytvořil <a id="about-link" href="#" data-href="https://github.com/lukokaravan">Luko Karavan</a></div>
+        <div id="about-kofi-label">Můžete mu koupit kafe:</div>
+        <button id="btn-kofi"><img src="assets/kofi.png" alt="Ko-fi" /></button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
