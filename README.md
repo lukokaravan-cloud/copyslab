@@ -4,9 +4,9 @@ A snippet manager for Linux. Click a snippet to copy it to the clipboard — no 
 
 Data is stored as plain text files on disk. Sync via Dropbox or Git is up to you. Built with Tauri v2 and a Rust backend — not Electron.
 
-![Snippet list](https://www.lukokaravan.cz/assets/img/copyslab/copyslab-list-thumb.png)
-![New snippet](https://www.lukokaravan.cz/assets/img/copyslab/copyslab-new-thumb.png)
-![Tag browser](https://www.lukokaravan.cz/assets/img/copyslab/copyslab-tags-thumb.png)
+![Snippet list](copyslab-list.webp)
+![New snippet](copyslab-new.webp)
+![Tag browser](copyslab-tags.webp)
 
 ## Download
 
