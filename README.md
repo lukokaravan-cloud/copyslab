@@ -20,4 +20,4 @@ Data is stored as plain text files on disk. Sync via Dropbox or Git is up to you
 
 ## Author
 
-[Luko Karavan](https://www.lukokaravan.cz) · [Ko-fi](https://ko-fi.com/karavan)
+[Luko Karavan](https://www.lukokaravan.cz/en/) · [Short stories in English](https://antihistor.substack.com) · [Ko-fi](https://ko-fi.com/karavan)
