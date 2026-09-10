@@ -77,7 +77,7 @@ const LANGS = {
     aboutClose: 'Close',
     author: 'Created by',
     authorLink: 'Luko Karavan',
-    authorHref: 'https://ko-fi.com/karavan/shop',
+    authorHref: 'https://www.lukokaravan.com/',
     kofiLabel: 'Buy him a coffee:',
     kofiHref: 'https://ko-fi.com/karavan',
     desc: 'Click content to copy · Click name to edit',
